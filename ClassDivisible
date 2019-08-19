@@ -1,0 +1,44 @@
+package ejercicio2;
+
+public class Divisible {
+	private int num;
+
+	public Divisible (int num) {
+		this.setNum(num);
+	}
+
+	public Divisible () {
+		this.setNum(0);
+	}
+	
+	public boolean isDivisible3() {
+		if (this.getNum()%3==0) {
+			System.out.print("Fizz");
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean isDivisible5() {
+		if (this.getNum()%5==0) {
+			System.out.println("Buzz");
+			return true;
+		}
+		return false;
+	}
+	
+	public void isDivisible() {
+		isDivisible3();
+		isDivisible5();
+	}
+	
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+
+}
